@@ -9,7 +9,6 @@
     - [4. Create `media/` Directory](#4-create-media-directory)
     - [5. Run Migrations and Create Admin User](#5-run-migrations-and-create-admin-user)
     - [6. Run the Project](#6-run-the-project)
-- [Notes](#notes)
 
 ---
 
