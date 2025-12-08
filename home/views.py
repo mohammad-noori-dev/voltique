@@ -1,3 +1,5 @@
+import threading
+
 from django.http import JsonResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse
@@ -5,6 +7,7 @@ from django.views import View
 
 from home.forms import MessageForm
 from home.models import Message
+from utils.email_service import send_email
 
 
 # Create your views here.
@@ -20,13 +23,14 @@ class Home(View):
 
         if request.headers.get('x-requested-with') == 'XMLHttpRequest':
             if form.is_valid():
-                message = Message(
-                    email=form.cleaned_data['email'],
-                    full_name=form.cleaned_data['full_name'],
-                    body=form.cleaned_data['body'],
-                ).save()
-                # threading.Thread(target=send_email, args=(f"New message - {message.full_name} - {message.email}",
-                #                                           message.body + f"\n\nName: {message.full_name}\nEmail: {message.email}")).start()
+                message = Message()
+                message.email=form.cleaned_data['email'],
+                message.full_name=form.cleaned_data['full_name'],
+                message.body=form.cleaned_data['body'],
+                message.save()
+                threading.Thread(target=send_email, args=(f"New message - {message.full_name} - {message.email}",
+                                                          str(message.body) + f"\n\nName: {message.full_name}\nEmail: {message.email}",
+                                                          message.email)).start()
                 return JsonResponse({'success': True})
             return JsonResponse({
                 'success': False,
