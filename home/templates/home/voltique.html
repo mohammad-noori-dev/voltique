@@ -16,10 +16,7 @@
             --muted: #64748b
         }
 
-        * {
-            box-sizing: border-box
-        }
-
+        * { box-sizing: border-box }
         body {
             font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
             line-height: 1.5;
@@ -33,17 +30,8 @@
             border-bottom: 1px solid #eef2ff
         }
 
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px
-        }
-
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 14px
-        }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px }
+        .brand { display: flex; align-items: center; gap: 14px }
 
         .logo {
             width: 56px;
@@ -58,10 +46,7 @@
             font-size: 20px
         }
 
-        nav {
-            margin-left: auto
-        }
-
+        nav { margin-left: auto }
         nav a {
             margin-left: 18px;
             text-decoration: none;
@@ -76,14 +61,21 @@
             padding: 48px 0
         }
 
-        .hero-left {
-            flex: 1
+        .hero-left { flex: 1 }
+
+        .why-voltique{
+            padding: 28px 0
         }
 
-        h1 {
-            font-size: 38px;
-            margin: 0 0 12px
+        .services{
+            padding: 28px 0
         }
+        .contact{
+            padding: 28px 0;
+            margin-top: 26px;
+        }
+
+        h1 { font-size: 38px; margin: 0 0 12px }
 
         .tagline {
             color: var(--accent);
@@ -113,9 +105,7 @@
             box-shadow: 0 6px 18px rgba(2, 6, 23, .06);
         }
 
-        .hero-right {
-            width: 420px
-        }
+        .hero-right { width: 420px }
 
         .features {
             display: grid;
@@ -131,15 +121,8 @@
             text-align: center
         }
 
-        .feature h4 {
-            margin: 12px 0 6px
-        }
-
-        .feature p {
-            margin: 0;
-            color: var(--muted);
-            font-size: 14px
-        }
+        .feature h4 { margin: 12px 0 6px }
+        .feature p { margin: 0; color: var(--muted); font-size: 14px }
 
         .about {
             display: flex;
@@ -155,31 +138,15 @@
         }
 
         @media (max-width: 880px) {
-            .hero {
-                flex-direction: column
-            }
-
-            .hero-right {
-                width: 100%
-            }
-
-            .features {
-                grid-template-columns:repeat(2, 1fr)
-            }
+            .hero { flex-direction: column }
+            .hero-right { width: 100% }
+            .features { grid-template-columns:repeat(2, 1fr) }
         }
 
         @media (max-width: 520px) {
-            .features {
-                grid-template-columns:1fr
-            }
-
-            nav {
-                display: none
-            }
-
-            h1 {
-                font-size: 28px
-            }
+            .features { grid-template-columns:1fr }
+            nav { display: none }
+            h1 { font-size: 28px }
         }
     </style>
 </head>
@@ -190,12 +157,13 @@
             <div class="logo">VQ</div>
             <div>
                 <div style="font-weight:800">Voltique</div>
-                <div style="font-size:12px;color:var(--muted)">Your Energy. Our Expertise.</div>
             </div>
         </div>
+
         <nav>
-            <a href="#services">Services</a>
             <a href="#about">About</a>
+            <a href="#why-voltique">Why Voltique</a>
+            <a href="#services">Services</a>
             <a href="#contact">Contact</a>
         </nav>
     </div>
@@ -204,17 +172,15 @@
 <main class="container">
     <section class="hero">
         <div class="hero-left">
-            <div class="tagline">Your Energy. Our Expertise.</div>
+
             <h1>Smarter energy solutions for homes & businesses</h1>
+
             <p class="lead">Voltique helps you design, install and manage efficient energy systems — solar, storage, EV
                 charging and smart building services — to reduce costs and emissions.</p>
+
             <a class="cta" href="#contact">Get a free consultation</a>
 
             <div class="features" aria-hidden="true">
-                <div class="feature card">
-                    <h4>Solar + Storage</h4>
-                    <p>Turn sunlight into reliable power with optimized battery systems.</p>
-                </div>
                 <div class="feature card">
                     <h4>Commercial Energy</h4>
                     <p>Reduce operating costs across fleets, sites and buildings.</p>
@@ -223,33 +189,25 @@
                     <h4>EV Charging</h4>
                     <p>Scalable charging solutions for homes and commercial fleets.</p>
                 </div>
+                <div class="feature card">
+                    <h4>Solar + Storage</h4>
+                    <p>Turn sunlight into reliable power with optimized battery systems.</p>
+                </div>
             </div>
         </div>
 
-        <aside class="hero-right card">
-            <h3 style="margin-top:0">Why Voltique?</h3>
-            <p style="color:var(--muted);margin-bottom:14px">We combine engineering expertise, real‑time analytics and
-                end-to-end project delivery to maximize energy independence and ROI.</p>
-            <ul style="padding-left:18px;margin:0;color:var(--muted);font-size:14px">
-                <li>Custom site assessments</li>
-                <li>Turnkey installation & commissioning</li>
-                <li>24/7 monitoring & maintenance</li>
-            </ul>
-            <div style="margin-top:18px;display:flex;gap:12px">
-                <a class="cta" href="#contact" style="background:#111827">Request a quote</a>
-                <a href="#services"
-                   style="text-decoration:none;padding:10px 14px;border-radius:10px;border:1px solid #e6eef8;display:inline-block">Our
-                    services</a>
-            </div>
-        </aside>
+
     </section>
 
     <section id="about" class="about">
         <div style="flex:1">
             <h2>About Voltique</h2>
-            <p style="color:var(--muted)">Founded by energy engineers, Voltique delivers tailored solutions that balance
+
+            <p style="color:var(--muted)">
+                Founded by <strong>KUMAR Naresh</strong>, Voltique delivers tailored solutions that balance
                 performance with sustainability. We work with homeowners, property managers and enterprises to create
-                resilient energy systems that save money and cut carbon.</p>
+                resilient energy systems that save money and cut carbon.
+            </p>
         </div>
         <div style="width:320px">
             <div class="card">
@@ -262,7 +220,32 @@
         </div>
     </section>
 
-    <section id="services">
+    <section id="why-voltique" class="why-voltique">
+        <h2>Why Voltique?</h2>
+        <p style="color:var(--muted)">We combine deep industry expertise with a customer-first approach to deliver
+            energy solutions that truly meet your needs.</p>
+        <div style="margin-top:18px;display:flex;gap:12px">
+            <a class="cta" href="#contact" style="background:#111827">Request a quote</a>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:12px">
+            <div class="card">
+                <h4>Customized Solutions</h4>
+                <p style="color:var(--muted)">Every project is tailored to your unique energy goals and site conditions.
+                </p>
+            </div>
+            <div class="card">
+                <h4>End-to-End Service</h4>
+                <p style="color:var(--muted)">From initial consultation to ongoing maintenance, we handle it all.</p>
+            </div>
+            <div class="card">
+                <h4>Proven Expertise</h4>
+                <p style="color:var(--muted)">Our team has years of experience delivering successful energy projects
+                    across sectors.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
         <h2>Services</h2>
         <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:12px">
             <div class="card">
@@ -283,7 +266,7 @@
         </div>
     </section>
 
-    <section id="contact" style="margin-top:26px">
+    <section id="contact" class="contact">
         <h2>Contact</h2>
         <p style="color:var(--muted)">Want to talk? Send us a message and our energy experts will reach out.</p>
         <form class="card" method="post" action="{% url 'home:home-page' %}" novalidate data-form-type="contact"
