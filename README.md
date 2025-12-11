@@ -6,9 +6,8 @@
     - [1. Create and Activate Virtual Environment](#1-create-and-activate-virtual-environment)
     - [2. Install Required Packages](#2-install-required-packages)
     - [3. Create `.env` File](#3-create-env-file)
-    - [4. Create `media/` Directory](#4-create-media-directory)
-    - [5. Run Migrations and Create Admin User](#5-run-migrations-and-create-admin-user)
-    - [6. Run the Project](#6-run-the-project)
+    - [4. Run Migrations and Create Admin User](#5-run-migrations-and-create-admin-user)
+    - [5. Run the Project](#6-run-the-project)
 
 ---
 
@@ -58,20 +57,12 @@ copy .env.example .env
 
 Then edit the `.env` file to provide the correct environment variable values (e.g. database credentials, secret key,
 etc.).
-
 ---
 
-### 4. Create `media/` Directory
+### 4. Run Migrations and Create Admin User
 
 ```bash
-mkdir media
-```
-
----
-
-### 5. Run Migrations and Create Admin User
-
-```bash
+python3 manage.py makemigrations
 python3 manage.py migrate
 python3 manage.py createsuperuser
 ```
@@ -80,10 +71,10 @@ Follow the prompts to create your admin credentials.
 
 ---
 
-### 6. Run the Project
+### 5. Run the Project
 
 ```bash
-python3 manage.py runserver 0.0.0.0:8000
+python3 manage.py runserver
 ```
 
 Then open your browser and go to:
