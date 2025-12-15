@@ -56,6 +56,9 @@ const translations = {
     "contact-email": "Ou envoyez-nous un email",
     "footer-text": "• Votre énergie. Notre expertise.",
     "footer-year": "Fait avec soin — 2025",
+    "full-name": "Nom complet",
+    "email": "Votre Email",
+    "message": "Votre Message",
   },
   en: {
     title: "Voltique — Your Energy. Our Expertise.",
@@ -113,6 +116,9 @@ const translations = {
     "contact-email": "Or email us",
     "footer-text": "• Your Energy. Our Expertise.",
     "footer-year": "Made with care — 2025",
+    "full-name": "Full name",
+    "email": "Your Email",
+    "message": "Your Message",
   },
 };
 
@@ -125,6 +131,14 @@ function applyLanguage(lang) {
     const key = el.getAttribute("data-key");
     if (translations[lang][key]) {
       el.innerHTML = translations[lang][key];
+    }
+  });
+  // Handle placeholders
+  const inputs = document.querySelectorAll("[data-key-placeholder]");
+  inputs.forEach((el) => {
+    const key = el.getAttribute("data-key-placeholder");
+    if (translations[lang][key]) {
+      el.setAttribute("placeholder", translations[lang][key]);
     }
   });
   // Update language switch button
