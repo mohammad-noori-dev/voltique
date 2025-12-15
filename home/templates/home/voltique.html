@@ -25,25 +25,22 @@
         }
 
         header {
+            display: flex;
+            align-items: center;
+            height: 10vh;
             background: linear-gradient(90deg, rgba(14, 165, 164, .06), rgba(99, 102, 241, .03));
-            padding: 28px 20px;
+            /* padding: 28px 20px; */
             border-bottom: 1px solid #eef2ff
         }
 
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px }
+        .container { width: 60%; margin: 0 auto; padding: 0 20px ; height: 70%;}
         .brand { display: flex; align-items: center; gap: 14px }
 
         .logo {
-            width: 56px;
-            height: 56px;
-            border-radius: 10px;
-            background: linear-gradient(135deg, var(--accent), #6366f1);
+            height: 4rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            font-weight: 700;
-            font-size: 20px
         }
 
         nav { margin-left: auto }
@@ -153,13 +150,7 @@
 <body>
 <header>
     <div class="container brand">
-        <div style="display:flex;align-items:center;gap:12px">
-            <div class="logo">VQ</div>
-            <div>
-                <div style="font-weight:800">Voltique</div>
-            </div>
-        </div>
-
+        <img class="logo" src="{% static 'images/Voltique_Logo_3.png' %}" alt="Voltique Logo">
         <nav>
             <a href="#about">About</a>
             <a href="#why-voltique">Why Voltique</a>
