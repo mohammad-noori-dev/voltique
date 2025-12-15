@@ -30,7 +30,7 @@
       header {
         display: flex;
         align-items: center;
-        height: 10vh;
+        height: 15vh;
         background: linear-gradient(
           90deg,
           rgba(14, 165, 164, 0.06),
@@ -95,7 +95,7 @@
       .services {
         padding: 28px 0;
       }
-      .contact {
+      .quote {
         padding: 28px 0;
       }
       h1 {
@@ -216,9 +216,17 @@
             systems — solar, storage, EV charging and smart building services —
             to reduce costs and emissions.
           </p>
-          <a class="cta" href="#contact" data-key="hero-cta"
+          <!-- <a class="cta" href="#contact" data-key="hero-cta"
             >Get a free consultation</a
-          >
+          > -->
+          <div style="margin-top: 18px; display: flex; gap: 12px">
+            <a
+              class="cta"
+              href="#quote"
+              data-key="why-cta"
+              >Request a quote</a
+            >
+          </div>
           <div class="features" aria-hidden="true">
             <div class="feature card">
               <h4 data-key="feature1-title">Commercial Energy</h4>
@@ -247,7 +255,7 @@
         <div style="flex: 1">
           <h2 data-key="about-title">About Voltique</h2>
           <p style="color: var(--muted)" data-key="about-desc">
-            Founded by <strong>KUMAR Naresh</strong>, Voltique delivers tailored
+            Founder and CEO <strong>KUMAR Naresh</strong>, Voltique delivers tailored
             solutions that balance performance with sustainability. We work with
             homeowners, property managers and enterprises to create resilient
             energy systems that save money and cut carbon.
@@ -281,15 +289,6 @@
           We combine deep industry expertise with a customer-first approach to
           deliver energy solutions that truly meet your needs.
         </p>
-        <div style="margin-top: 18px; display: flex; gap: 12px">
-          <a
-            class="cta"
-            href="#contact"
-            style="background: #111827"
-            data-key="why-cta"
-            >Request a quote</a
-          >
-        </div>
         <div
           style="
             display: grid;
@@ -356,8 +355,8 @@
         </div>
       </section>
 
-      <section id="contact" class="contact">
-        <h2 data-key="contact-title">Contact</h2>
+      <section id="quote" class="quote">
+        <h2 data-key="quote-title">Request a quote</h2>
         <p style="color:var(--muted)" data-key="contact-desc">Want to talk? Send us a message and our energy experts will reach out.</p>
         <form class="card" method="post" action="{% url 'home:home-page' %}" novalidate data-form-type="contact"
               style="max-width:680px;margin-top:12px">
@@ -384,6 +383,12 @@
             </div>
         </form>
     </section>
+          <section id="contact" class="contact">
+        <h2 data-key="contact-title">Contact</h2>
+        <p style="color: var(--muted)">
+          Email : info@voltique.fr
+        </p>
+      </section>
     </main>
 
     <footer>
