@@ -6,7 +6,7 @@ const translations = {
     "nav-services": "Services",
     "nav-contact": "Contact",
     "hero-title":
-      "Solutions énergétiques plus intelligentes pour les maisons et les entreprises",
+      "Des solutions énergétiques plus intelligentes pour les bâtiments résidentiels et commerciaux",
     "hero-lead":
       "Voltique vous aide à concevoir, installer et gérer des systèmes énergétiques efficaces — solaire, stockage, recharge EV et services de bâtiments intelligents — pour réduire les coûts et les émissions.",
     // "hero-cta": "Obtenez une consultation gratuite",
@@ -29,7 +29,7 @@ const translations = {
     "why-title": "Pourquoi Voltique ?",
     "why-desc":
       "Nous combinons une expertise approfondie du secteur avec une approche centrée sur le client pour fournir des solutions énergétiques adaptées à vos besoins.",
-    "why-cta": "Demander un devis",
+    "why-cta": "Demander un devis de démonstration",
     "why-feature1-title": "Solutions personnalisées",
     "why-feature1-desc":
       "Chaque projet est adapté à vos objectifs énergétiques et aux conditions du site.",
@@ -49,7 +49,7 @@ const translations = {
     "service3-title": "Opérations",
     "service3-desc":
       "Surveillance, maintenance et contrats de performance pour maintenir les systèmes en bonne santé.",
-    "conte-title": "Contact",
+    "contact-title": "Contact",
     "quote-title": "Demander un devis",
     "contact-desc":
       "Vous voulez parler ? Envoyez-nous un message et nos experts en énergie vous contacteront.",
@@ -67,7 +67,7 @@ const translations = {
     "nav-why": "Why Voltique",
     "nav-services": "Services",
     "nav-contact": "Contact",
-    "hero-title": "Smarter energy solutions for homes & businesses",
+    "hero-title": "Smarter energy solutions for reaidencials & commercial buildings",
     "hero-lead":
       "Voltique helps you design, install and manage efficient energy systems — solar, storage, EV charging and smart building services — to reduce costs and emissions.",
     // "hero-cta": "Get a free consultation",
@@ -90,7 +90,7 @@ const translations = {
     "why-title": "Why Voltique?",
     "why-desc":
       "We combine deep industry expertise with a customer-first approach to deliver energy solutions that truly meet your needs.",
-    "why-cta": "Request a quote",
+    "why-cta": "Request a demo quote",
     "why-feature1-title": "Customized Solutions",
     "why-feature1-desc":
       "Every project is tailored to your unique energy goals and site conditions.",
@@ -110,7 +110,7 @@ const translations = {
     "service3-title": "Operations",
     "service3-desc":
       "Monitoring, maintenance and performance contracts to keep systems healthy.",
-    "conte-title": "Contact",
+    "contact-title": "Contact",
     "quote-title": "Request a quote",
     "contact-desc":
       "Want to talk? Send us a message and our energy experts will reach out.",

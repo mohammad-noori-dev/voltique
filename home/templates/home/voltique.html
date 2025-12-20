@@ -209,7 +209,7 @@
       <section class="hero">
         <div class="hero-left">
           <h1 data-key="hero-title">
-            Smarter energy solutions for homes & businesses
+            Smarter energy solutions for reaidencials & commercial buildings
           </h1>
           <p class="lead" data-key="hero-lead">
             Voltique helps you design, install and manage efficient energy
@@ -222,9 +222,9 @@
           <div style="margin-top: 18px; display: flex; gap: 12px">
             <a
               class="cta"
-              href="#quote"
+              href="#contact"
               data-key="why-cta"
-              >Request a quote</a
+              >Request a demo quote</a
             >
           </div>
           <div class="features" aria-hidden="true">
@@ -352,12 +352,62 @@
               healthy.
             </p>
           </div>
+
+
+                    <div class="card">
+            <h4 data-key="service3-title">Operations</h4>
+            <p style="color: var(--muted)" data-key="service3-desc">
+              Monitoring, maintenance and performance contracts to keep systems
+              healthy.
+            </p>
+          </div>
+                    <div class="card">
+            <h4 data-key="service3-title">Operations</h4>
+            <p style="color: var(--muted)" data-key="service3-desc">
+              Monitoring, maintenance and performance contracts to keep systems
+              healthy.
+            </p>
+          </div>
+                    <div class="card">
+            <h4 data-key="service3-title">Operations</h4>
+            <p style="color: var(--muted)" data-key="service3-desc">
+              Monitoring, maintenance and performance contracts to keep systems
+              healthy.
+            </p>
+          </div>
+                    <div class="card">
+            <h4 data-key="service3-title">Operations</h4>
+            <p style="color: var(--muted)" data-key="service3-desc">
+              Monitoring, maintenance and performance contracts to keep systems
+              healthy.
+            </p>
+          </div>
+                    <div class="card">
+            <h4 data-key="service3-title">Operations</h4>
+            <p style="color: var(--muted)" data-key="service3-desc">
+              Monitoring, maintenance and performance contracts to keep systems
+              healthy.
+            </p>
+          </div>
+
+                    <div class="card">
+            <h4 data-key="" style="color: rgb(255, 89, 48);">Comming soon ...</h4>
+            <p style="color: var(--muted)" data-key="">
+              Test, Test, Test,
+            </p>
+          </div>
         </div>
       </section>
 
-      <section id="quote" class="quote">
-        <h2 data-key="quote-title">Request a quote</h2>
-        <p style="color:var(--muted)" data-key="contact-desc">Want to talk? Send us a message and our energy experts will reach out.</p>
+      <section id="contact" class="quote">
+        <h2 data-key="contact-title">Contact</h2>
+        <div style="padding: 1rem;background: linear-gradient(
+          90deg,
+          rgba(14, 165, 164, 0.06),
+          rgba(99, 102, 241, 0.03)
+        );border-radius: 1rem;display: flex;column-gap: 2rem;">
+          <div style="width: 70%;">
+            <p style="color:var(--muted);margin-top:8px;" data-key="contact-desc">Want to talk? Send us a message and our energy experts will reach out.</p>
         <form class="card" method="post" action="{% url 'home:home-page' %}" novalidate data-form-type="contact"
               style="max-width:680px;margin-top:12px">
             {% csrf_token %}
@@ -378,16 +428,24 @@
 
             <div style="margin-top:12px;display:flex;gap:12px">
                 <button class="cta" type="submit" data-key="contact-cta">Send message</button>
-                <a href="mailto:info@voltique.example"
-                   style="align-self:center;color:var(--muted);text-decoration:none" data-key="contact-email">Or email us</a>
+                <!-- <a href="mailto:info@voltique.example"
+                   style="align-self:center;color:var(--muted);text-decoration:none" data-key="contact-email">Or email us</a> -->
             </div>
         </form>
-    </section>
-          <section id="contact" class="contact">
-        <h2 data-key="contact-title">Contact</h2>
-        <p style="color: var(--muted)">
-          Email : info@voltique.fr
-        </p>
+          </div>
+
+          <!-- CONTACT INFO (simple & clean) -->
+        <div style="min-width:220px;color:var(--muted)">
+          <h4 style="margin-top:8px">Direct contact</h4>
+          <p style="margin:6px 0">
+            📧 info@voltique.fr
+          </p>
+          <p style="margin:6px 0;font-size:14px">
+            Response within 24 hours<br>
+            Residential & commercial projects
+          </p>
+        </div>
+        </div>
       </section>
     </main>
 
@@ -417,5 +475,20 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const demoBtn = document.querySelector('a[data-key="why-cta"]');
+        const messageField = document.querySelector('#contact-message');
+
+        if (demoBtn && messageField) {
+          demoBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+            messageField.value = "Hello,\nThis is a demo quote for you to send."; 
+          });
+        }
+      });
+    </script>
+
   </body>
 </html>
