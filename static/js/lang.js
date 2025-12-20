@@ -29,7 +29,7 @@ const translations = {
     "why-title": "Pourquoi Voltique ?",
     "why-desc":
       "Nous combinons une expertise approfondie du secteur avec une approche centrée sur le client pour fournir des solutions énergétiques adaptées à vos besoins.",
-    "why-cta": "Demander un devis de démonstration",
+    "why-cta": "Demander un devis",
     "why-feature1-title": "Solutions personnalisées",
     "why-feature1-desc":
       "Chaque projet est adapté à vos objectifs énergétiques et aux conditions du site.",
@@ -42,13 +42,13 @@ const translations = {
     "services-title": "Services",
     "service1-title": "Conception et ingénierie",
     "service1-desc":
-      "Modélisation du site, dimensionnement du système et analyse du ROI pour maximiser la performance.",
+      "Nous concevons des solutions électriques évolutives et conformes pour les bâtiments commerciaux, y compris les systèmes CFO, CFA, VDI, CVC et de sécurité incendie.",
     "service2-title": "Installation",
     "service2-desc":
-      "Gestion complète du projet, installateurs certifiés et déploiements sécurisés.",
+      "Nous assurons l'installation complète des systèmes électriques et basse tension pour les bâtiments commerciaux, en garantissant la sécurité, la qualité et une intégration harmonieuse.",
     "service3-title": "Opérations",
     "service3-desc":
-      "Surveillance, maintenance et contrats de performance pour maintenir les systèmes en bonne santé.",
+      "Nous fournissons des services fiables d'exploitation et de maintenance afin d'assurer des performances optimales et une efficacité durable des systèmes électriques des bâtiments commerciaux.",
     "contact-title": "Contact",
     "quote-title": "Demander un devis",
     "contact-desc":
@@ -67,7 +67,7 @@ const translations = {
     "nav-why": "Why Voltique",
     "nav-services": "Services",
     "nav-contact": "Contact",
-    "hero-title": "Smarter energy solutions for reaidencials & commercial buildings",
+    "hero-title": "Smarter energy solutions for residencials & commercial buildings",
     "hero-lead":
       "Voltique helps you design, install and manage efficient energy systems — solar, storage, EV charging and smart building services — to reduce costs and emissions.",
     // "hero-cta": "Get a free consultation",
@@ -90,7 +90,7 @@ const translations = {
     "why-title": "Why Voltique?",
     "why-desc":
       "We combine deep industry expertise with a customer-first approach to deliver energy solutions that truly meet your needs.",
-    "why-cta": "Request a demo quote",
+    "why-cta": "Request a quote",
     "why-feature1-title": "Customized Solutions",
     "why-feature1-desc":
       "Every project is tailored to your unique energy goals and site conditions.",
@@ -103,13 +103,13 @@ const translations = {
     "services-title": "Services",
     "service1-title": "Design & Engineering",
     "service1-desc":
-      "Site modelling, system sizing and ROI analysis to maximize performance.",
+      "We design scalable and compliant electrical solutions for commercial buildings, including CFO, CFA, VDI, HVAC, and fire safety systems.",
     "service2-title": "Installation",
     "service2-desc":
-      "Full project management, certified installers and safety-first deployments.",
+      "We deliver end-to-end installation of electrical and low-current systems for commercial buildings, ensuring safety, quality, and seamless integration.",
     "service3-title": "Operations",
     "service3-desc":
-      "Monitoring, maintenance and performance contracts to keep systems healthy.",
+      "We provide reliable operation and maintenance services to ensure optimal performance and long-term efficiency of commercial building electrical systems.",
     "contact-title": "Contact",
     "quote-title": "Request a quote",
     "contact-desc":
