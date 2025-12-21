@@ -3,7 +3,9 @@ const translations = {
     title: "Voltique — Votre énergie. Notre expertise.",
     "nav-about": "À propos",
     "nav-why": "Pourquoi Voltique",
-    "nav-services": "Services",
+    "nav-services": "Services ▾",
+    "dropdown-lighting":"Éclairage",
+    "dropdown-renewable":"Renouvelable",
     "nav-contact": "Contact",
     "hero-title":
       "Des solutions énergétiques plus intelligentes pour les bâtiments résidentiels et commerciaux",
@@ -65,7 +67,9 @@ const translations = {
     title: "Voltique — Your Energy. Our Expertise.",
     "nav-about": "About",
     "nav-why": "Why Voltique",
-    "nav-services": "Services",
+    "nav-services": "Services ▾",
+    "dropdown-lighting":"Lighting",
+    "dropdown-renewable":"Renewable",
     "nav-contact": "Contact",
     "hero-title": "Smarter energy solutions for residencials & commercial buildings",
     "hero-lead":

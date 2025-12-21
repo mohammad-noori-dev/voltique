@@ -112,10 +112,12 @@
   color: var(--dark);
   text-decoration: none;
   display: block;
+  margin: 0;
 }
 
 .dropdown-item:hover {
   background: rgba(14, 165, 164, 0.08);
+  border-radius: 12px;
 }
 
 /* Chevron */
@@ -272,8 +274,8 @@
               <a href="#services" class="dropdown-item">CVC</a>
               <a href="#services" class="dropdown-item">HVAC</a>
               <a href="#services" class="dropdown-item">SSI</a>
-              <a href="#services" class="dropdown-item">Lighting</a>
-              <a href="#services" class="dropdown-item">Renewable</a>
+              <a href="#services" class="dropdown-item" data-key="dropdown-lighting">Lighting</a>
+              <a href="#services" class="dropdown-item" data-key="dropdown-renewable">Renewable</a>
             </div>
           </div>
           <a href="#contact" data-key="nav-contact">Contact</a>
@@ -486,6 +488,7 @@
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       <script src={% static 'js/script.js' %}></script>
       <script src="{% static 'js/lang.js' %}"></script>
+      <script src="{% static 'js/services-drop-down.js' %}"></script>
       <div
         class="container"
         style="
@@ -508,21 +511,5 @@
         </div>
       </div>
     </footer>
-<script>
-  const dropdown = document.querySelector(".dropdown");
-  const trigger = dropdown.querySelector(".nav-link");
-
-  trigger.addEventListener("click", function (e) {
-    e.preventDefault();
-    dropdown.classList.toggle("open");
-  });
-
-  document.addEventListener("click", function (e) {
-    if (!dropdown.contains(e.target)) {
-      dropdown.classList.remove("open");
-    }
-  });
-</script>
-
   </body>
 </html>
