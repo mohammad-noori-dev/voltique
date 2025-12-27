@@ -1,8 +1,8 @@
 const translations = {
   fr: {
-    title: "Voltique — Votre énergie. Notre expertise.",
+    title: "Voultique — Votre énergie. Notre expertise.",
     "nav-about": "À propos",
-    "nav-why": "Pourquoi Voltique",
+    "nav-why": "Pourquoi Voultique",
     "nav-services": "Services ▾",
     "dropdown-lighting":"Éclairage",
     "dropdown-renewable":"Renouvelable",
@@ -10,7 +10,7 @@ const translations = {
     "hero-title":
       "Des solutions énergétiques plus intelligentes pour les bâtiments résidentiels et commerciaux",
     "hero-lead":
-      "Voltique vous aide à concevoir, installer et gérer des systèmes énergétiques efficaces — solaire, stockage, recharge EV et services de bâtiments intelligents — pour réduire les coûts et les émissions.",
+      "Voultique vous aide à concevoir, installer et gérer des systèmes énergétiques efficaces — solaire, stockage, recharge EV et services de bâtiments intelligents — pour réduire les coûts et les émissions.",
     // "hero-cta": "Obtenez une consultation gratuite",
     "feature1-title": "Énergie commerciale",
     "feature1-desc":
@@ -21,14 +21,14 @@ const translations = {
     "feature3-title": "Solaire + Stockage",
     "feature3-desc":
       "Transformez la lumière du soleil en énergie fiable avec des systèmes de batterie optimisés.",
-    "about-title": "À propos de Voltique",
+    "about-title": "À propos de Voultique",
     "about-desc":
-      "Fondateur et CEO <strong>KUMAR Naresh</strong>, Voltique propose des solutions adaptées qui équilibrent performance et durabilité. Nous travaillons avec les propriétaires, les gestionnaires de biens et les entreprises pour créer des systèmes énergétiques résilients qui économisent de l'argent et réduisent le carbone.",
+      "Fondateur et CEO <strong>KUMAR Naresh</strong>, Voultique propose des solutions adaptées qui équilibrent performance et durabilité. Nous travaillons avec les propriétaires, les gestionnaires de biens et les entreprises pour créer des systèmes énergétiques résilients qui économisent de l'argent et réduisent le carbone.",
     "partners-title": "Partenaires de confiance",
     "partners-desc":
       "Nous collaborons avec les principaux fabricants d'équipements et fournisseurs de financement pour offrir la meilleure valeur à nos clients.",
     "partners-extra": "Certifié ISO • Assuré • Garantie système 10 ans",
-    "why-title": "Pourquoi Voltique ?",
+    "why-title": "Pourquoi Voultique ?",
     "why-desc":
       "Nous combinons une expertise approfondie du secteur avec une approche centrée sur le client pour fournir des solutions énergétiques adaptées à vos besoins.",
     "why-cta": "Demander un devis",
@@ -57,6 +57,8 @@ const translations = {
       "Vous voulez parler ? Envoyez-nous un message et nos experts en énergie vous contacteront.",
     "contact-cta": "Envoyer le message",
     "contact-email": "Ou envoyez-nous un email",
+    "direct-contact": "Contact direct",
+    "direct-desc" : "Réponse sous 24 heures <br> Projets résidentiels et commerciaux",
     "footer-text": "• Votre énergie. Notre expertise.",
     "footer-year": "Fait avec soin — 2025",
     "full-name": "Nom complet",
@@ -64,16 +66,16 @@ const translations = {
     "message": "Votre Message",
   },
   en: {
-    title: "Voltique — Your Energy. Our Expertise.",
+    title: "Voultique — Your Energy. Our Expertise.",
     "nav-about": "About",
-    "nav-why": "Why Voltique",
+    "nav-why": "Why Voultique",
     "nav-services": "Services ▾",
     "dropdown-lighting":"Lighting",
     "dropdown-renewable":"Renewable",
     "nav-contact": "Contact",
     "hero-title": "Smarter energy solutions for residencials & commercial buildings",
     "hero-lead":
-      "Voltique helps you design, install and manage efficient energy systems — solar, storage, EV charging and smart building services — to reduce costs and emissions.",
+      "Voultique helps you design, install and manage efficient energy systems — solar, storage, EV charging and smart building services — to reduce costs and emissions.",
     // "hero-cta": "Get a free consultation",
     "feature1-title": "Commercial Energy",
     "feature1-desc":
@@ -84,14 +86,14 @@ const translations = {
     "feature3-title": "Solar + Storage",
     "feature3-desc":
       "Turn sunlight into reliable power with optimized battery systems.",
-    "about-title": "About Voltique",
+    "about-title": "About Voultique",
     "about-desc":
-      "Founder and CEO <strong>KUMAR Naresh</strong>, Voltique delivers tailored solutions that balance performance with sustainability. We work with homeowners, property managers and enterprises to create resilient energy systems that save money and cut carbon.",
+      "Founder and CEO <strong>KUMAR Naresh</strong>, Voultique delivers tailored solutions that balance performance with sustainability. We work with homeowners, property managers and enterprises to create resilient energy systems that save money and cut carbon.",
     "partners-title": "Trusted partners",
     "partners-desc":
       "We partner with leading equipment manufacturers and financing providers to bring the best value to our customers.",
     "partners-extra": "ISO certified • Insured • 10-year system warranty",
-    "why-title": "Why Voltique?",
+    "why-title": "Why Voultique?",
     "why-desc":
       "We combine deep industry expertise with a customer-first approach to deliver energy solutions that truly meet your needs.",
     "why-cta": "Request a quote",
@@ -120,6 +122,8 @@ const translations = {
       "Want to talk? Send us a message and our energy experts will reach out.",
     "contact-cta": "Send message",
     "contact-email": "Or email us",
+    "direct-contact": "Direct contact",
+    "direct-desc" : "Response within 24 hours <br> Residential & commercial projects",
     "footer-text": "• Your Energy. Our Expertise.",
     "footer-year": "Made with care — 2025",
     "full-name": "Full name",
