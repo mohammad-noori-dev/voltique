@@ -24,13 +24,13 @@ class Home(View):
         if request.headers.get('x-requested-with') == 'XMLHttpRequest':
             if form.is_valid():
                 message = Message()
-                message.email=form.cleaned_data['email'],
-                message.full_name=form.cleaned_data['full_name'],
-                message.body=form.cleaned_data['body'],
+                message.email = form.cleaned_data['email']
+                message.full_name = form.cleaned_data['full_name']
+                message.body = form.cleaned_data['body']
                 message.save()
                 threading.Thread(target=send_email, args=(f"New message - {message.full_name} - {message.email}",
                                                           str(message.body) + f"\n\nName: {message.full_name}\nEmail: {message.email}",
-                                                          message.email)).start()
+                                                          )).start()
                 return JsonResponse({'success': True})
             return JsonResponse({
                 'success': False,
