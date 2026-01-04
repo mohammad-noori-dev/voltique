@@ -64,6 +64,18 @@ const translations = {
     "full-name": "Nom complet",
     "email": "Votre Email",
     "message": "Votre Message",
+
+    "alert-network-title": "Erreur réseau",
+    "alert-network-text": "Le formulaire ne peut pas être envoyé. Veuillez réessayer.",
+    
+    "alert-server-title": "Erreur serveur",
+    "alert-server-text": "Réponse invalide reçue du serveur.",
+
+    "alert-success-title": "Envoyé !",
+    "alert-success-text": "Votre message a été envoyé avec succès.",
+
+    "alert-failure-title": "Échec !",
+    "alert-failure-text": "Veuillez remplir correctement le formulaire."
   },
   en: {
     title: "Luminque — Your Energy. Our Expertise.",
@@ -129,6 +141,18 @@ const translations = {
     "full-name": "Full name",
     "email": "Your Email",
     "message": "Your Message",
+
+    "alert-network-title": "Network error",
+    "alert-network-text": "Form can't be sent, please try again!",
+
+    "alert-server-title": "Server error",
+    "alert-server-text": "Invalid response received from server!",
+
+    "alert-success-title": "Sent!",
+    "alert-success-text": "Your message was sent successfully!",
+
+    "alert-failure-title": "Failure!",
+    "alert-failure-text": "Please fill out the form correctly!"
   },
 };
 

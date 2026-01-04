@@ -1,73 +1,85 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const form = document.querySelector('form[data-form-type="contact"]');
-    if (!form) return; // now valid because we are inside a function
+  const form = document.querySelector('form[data-form-type="contact"]');
+  if (!form) return; // now valid because we are inside a function
 
-    form.addEventListener('submit', async (e) => {
-        e.preventDefault();
+  function t(key) {
+    // translation helper
+    const lang =
+      document.documentElement.lang ||
+      localStorage.getItem("site-lang") ||
+      "fr";
 
-        // Clear previous errors
-        form.querySelectorAll('.error-color').forEach(el => el.remove());
-        form.querySelectorAll('.form-wrap').forEach(el => el.classList.remove('has-error'));
+    return translations[lang]?.[key] || key;
+  }
 
-        const formData = new FormData(form);
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
 
-        let response;
-        try {
-            response = await fetch(form.action, {
-                method: 'POST',
-                body: formData,
-                headers: {'X-Requested-With': 'XMLHttpRequest'}
-            });
-        } catch {
-            Swal.fire({
-                title: 'Network error',
-                text: "Form can't be sent, Please try again!",
-                icon: 'error'
-            });
-            return;
-        }
+    // Clear previous errors
+    form.querySelectorAll(".error-color").forEach((el) => el.remove());
+    form
+      .querySelectorAll(".form-wrap")
+      .forEach((el) => el.classList.remove("has-error"));
 
-        let data;
-        try {
-            data = await response.json();
-        } catch {
-            Swal.fire({
-                title: "Server Error",
-                text: "Invalid response received from server!",
-                icon: "error"
-            });
-            return;
-        }
+    const formData = new FormData(form);
 
-        if (data.success) {
-            Swal.fire({
-                title: 'Sent!',
-                text: 'Your message was sent successfully!',
-                icon: 'success'
-            });
-            form.reset();
-            return;
-        }
+    let response;
+    try {
+      response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: { "X-Requested-With": "XMLHttpRequest" },
+      });
+    } catch {
+      Swal.fire({
+        title: t("alert-network-title"),
+        text: t("alert-network-text"),
+        icon: "error",
+      });
+      return;
+    }
 
-        // Show validation errors
-        for (const [field, errors] of Object.entries(data.errors || {})) {
-            const input = form.querySelector(`[name="${field}"]`);
-            if (!input) continue;
+    let data;
+    try {
+      data = await response.json();
+    } catch {
+      Swal.fire({
+        title: t("alert-server-title"),
+        text: t("alert-server-text"),
+        icon: "error",
+      });
+      return;
+    }
 
-            const wrap = input.closest('.form-wrap');
-            if (wrap) {
-                wrap.classList.add('has-error');
-                const err = document.createElement('p');
-                err.className = 'error-color';
-                err.textContent = errors.join(', ');
-                wrap.appendChild(err);
-            }
-        }
+    if (data.success) {
+      Swal.fire({
+        title: t("alert-success-title"),
+        text: t("alert-success-text"),
+        icon: "success",
+      });
+      form.reset();
+      return;
+    }
 
-        Swal.fire({
-            title: 'Failure!',
-            text: 'Please fill out the form correctly!',
-            icon: 'error'
-        });
+    // Show validation errors
+    for (const [field, errors] of Object.entries(data.errors || {})) {
+      const input = form.querySelector(`[name="${field}"]`);
+      if (!input) continue;
+
+      const wrap = input.closest(".form-wrap");
+      if (wrap) {
+        wrap.classList.add("has-error");
+        const err = document.createElement("p");
+        err.className = "error-color";
+        err.textContent = errors.join(", ");
+        wrap.appendChild(err);
+      }
+    }
+
+    Swal.fire({
+      title: t("alert-failure-title"),
+      text: t("alert-failure-text"),
+      icon: "error",
     });
+  });
 });
