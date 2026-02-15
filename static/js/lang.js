@@ -1,8 +1,8 @@
 const translations = {
   fr: {
-    title: "Luminque — Votre énergie. Notre expertise.",
+    title: "Voltiques — Votre énergie. Notre expertise.",
     "nav-about": "À propos",
-    "nav-why": "Pourquoi Luminque",
+    "nav-why": "Pourquoi Voltiques",
     "nav-services": "Services ▾",
     "dropdown-lighting":"Éclairage",
     "dropdown-renewable":"Renouvelable",
@@ -10,7 +10,7 @@ const translations = {
     "hero-title":
       "Des solutions énergétiques plus intelligentes pour les bâtiments résidentiels et commerciaux",
     "hero-lead":
-      "Luminque vous aide à concevoir, installer et gérer des systèmes énergétiques efficaces — solaire, stockage, recharge EV et services de bâtiments intelligents — pour réduire les coûts et les émissions.",
+      "Voltiques vous aide à concevoir, installer et gérer des systèmes énergétiques efficaces — solaire, stockage, recharge EV et services de bâtiments intelligents — pour réduire les coûts et les émissions.",
     // "hero-cta": "Obtenez une consultation gratuite",
     "feature1-title": "Énergie commerciale",
     "feature1-desc":
@@ -21,14 +21,14 @@ const translations = {
     "feature3-title": "Solaire + Stockage",
     "feature3-desc":
       "Transformez la lumière du soleil en énergie fiable avec des systèmes de batterie optimisés.",
-    "about-title": "À propos de Luminque",
+    "about-title": "À propos de Voltiques",
     "about-desc":
-      "Fondateur et CEO <strong>KUMAR Naresh</strong>, Luminque propose des solutions adaptées qui équilibrent performance et durabilité. Nous travaillons avec les propriétaires, les gestionnaires de biens et les entreprises pour créer des systèmes énergétiques résilients qui économisent de l'argent et réduisent le carbone.",
+      "Fondateur et CEO <strong>KUMAR Naresh</strong>, Voltiques propose des solutions adaptées qui équilibrent performance et durabilité. Nous travaillons avec les propriétaires, les gestionnaires de biens et les entreprises pour créer des systèmes énergétiques résilients qui économisent de l'argent et réduisent le carbone.",
     "partners-title": "Partenaires de confiance",
     "partners-desc":
       "Nous collaborons avec les principaux fabricants d'équipements et fournisseurs de financement pour offrir la meilleure valeur à nos clients.",
     "partners-extra": "Certifié ISO • Assuré • Garantie système 10 ans",
-    "why-title": "Pourquoi Luminque ?",
+    "why-title": "Pourquoi Voltiques ?",
     "why-desc":
       "Nous combinons une expertise approfondie du secteur avec une approche centrée sur le client pour fournir des solutions énergétiques adaptées à vos besoins.",
     "why-cta": "Demander un devis",
@@ -78,16 +78,16 @@ const translations = {
     "alert-failure-text": "Veuillez remplir correctement le formulaire."
   },
   en: {
-    title: "Luminque — Your Energy. Our Expertise.",
+    title: "Voltiques — Your Energy. Our Expertise.",
     "nav-about": "About",
-    "nav-why": "Why Luminque",
+    "nav-why": "Why Voltiques",
     "nav-services": "Services ▾",
     "dropdown-lighting":"Lighting",
     "dropdown-renewable":"Renewable",
     "nav-contact": "Contact",
     "hero-title": "Smarter energy solutions for residencials & commercial buildings",
     "hero-lead":
-      "Luminque helps you design, install and manage efficient energy systems — solar, storage, EV charging and smart building services — to reduce costs and emissions.",
+      "Voltiques helps you design, install and manage efficient energy systems — solar, storage, EV charging and smart building services — to reduce costs and emissions.",
     // "hero-cta": "Get a free consultation",
     "feature1-title": "Commercial Energy",
     "feature1-desc":
@@ -98,14 +98,14 @@ const translations = {
     "feature3-title": "Solar + Storage",
     "feature3-desc":
       "Turn sunlight into reliable power with optimized battery systems.",
-    "about-title": "About Luminque",
+    "about-title": "About Voltiques",
     "about-desc":
-      "Founder and CEO <strong>KUMAR Naresh</strong>, Luminque delivers tailored solutions that balance performance with sustainability. We work with homeowners, property managers and enterprises to create resilient energy systems that save money and cut carbon.",
+      "Founder and CEO <strong>KUMAR Naresh</strong>, Voltiques delivers tailored solutions that balance performance with sustainability. We work with homeowners, property managers and enterprises to create resilient energy systems that save money and cut carbon.",
     "partners-title": "Trusted partners",
     "partners-desc":
       "We partner with leading equipment manufacturers and financing providers to bring the best value to our customers.",
     "partners-extra": "ISO certified • Insured • 10-year system warranty",
-    "why-title": "Why Luminque?",
+    "why-title": "Why Voltiques?",
     "why-desc":
       "We combine deep industry expertise with a customer-first approach to deliver energy solutions that truly meet your needs.",
     "why-cta": "Request a quote",
