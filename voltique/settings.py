@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-r(w6qp^u%-wea8pn2_=$k!jx*0d42lxfss1b(v3qsv!0jqd^ke
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["voltiques.fr", "www.voltiques.fr"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "voltiques.fr", "www.voltiques.fr"]
 
 # Application definition
 
